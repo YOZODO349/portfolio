@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="zh-CN">
 <head>
 <meta charset="utf-8">
@@ -479,6 +479,62 @@
   }
   .strip a:hover img { transform: scale(1.07); }
 
+  /* ---------- tools ---------- */
+
+  .tool {
+    padding: clamp(30px, 4vw, 46px) 0;
+    border-bottom: 1px solid var(--rule);
+  }
+  .tool:first-of-type { border-top: 1px solid var(--rule); }
+  .tool__shot {
+    display: block;
+    overflow: hidden;
+    border: 1px solid var(--rule);
+    background: var(--paper-2);
+    aspect-ratio: 16 / 9;
+  }
+  .tool__shot img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top center;
+    display: block;
+  }
+  .tool__body {
+    margin-top: clamp(18px, 2.4vw, 26px);
+    display: grid;
+    grid-template-columns: 0.85fr 1.15fr;
+    gap: clamp(20px, 3vw, 48px);
+    align-items: start;
+  }
+  .tool__meta { font-size: 0.78rem; color: var(--ink-faint); letter-spacing: 0.04em; }
+  .tool__t { margin-top: 8px; font-size: 1.2rem; font-weight: 700; }
+  .tool__d { margin-top: 12px; font-size: 0.92rem; line-height: 1.8; color: var(--ink-soft); }
+  .tool__note {
+    margin-top: 16px;
+    padding-left: 14px;
+    border-left: 2px solid var(--vermilion);
+    font-size: 0.88rem;
+    line-height: 1.8;
+  }
+  .tool__link {
+    display: inline-block;
+    margin-top: 16px;
+    font-size: 0.82rem;
+    color: var(--ink-soft);
+    text-decoration: none;
+    border-bottom: 1px solid var(--rule);
+    padding-bottom: 2px;
+  }
+  .tool__link:hover { color: var(--vermilion); border-bottom-color: var(--vermilion); }
+  .mini {
+    margin-top: 24px;
+    font-size: 0.92rem;
+    line-height: 1.85;
+    color: var(--ink-soft);
+  }
+  .mini strong { color: var(--ink); font-weight: 700; }
+
   /* ---------- responsive ---------- */
 
   @media (max-width: 920px) {
@@ -486,6 +542,7 @@
     .hero__cap { max-width: none; }
     .feat { grid-template-columns: 1fr; gap: 34px; }
     .feat__t { max-width: none; }
+    .tool__body { grid-template-columns: 1fr; gap: 14px; }
     .strip a { width: 88px; }
     .flow { grid-template-columns: repeat(2, 1fr); }
     .flow > li { border-right: 0; padding: 26px 0 6px; border-bottom: 1px solid var(--rule); }
@@ -529,12 +586,13 @@
   <section class="hero">
     <div class="wrap hero__grid">
       <div>
-        <p class="eyebrow">内容运营 · AI 工作流</p>
-        <h1>我定选题，AI 出稿，<br>我<em>审到能发</em>。</h1>
-        <p class="hero__sub">六天做完十一条历史短视频，总播放&nbsp;33.1&nbsp;万。临床医学出身，习惯逐字核对。</p>
+        <p class="eyebrow">内容 · 工具 · AI 工作流</p>
+        <h1>我提需求，AI 出活，<br>我<em>改到能用</em>。</h1>
+        <p class="hero__sub">六天十一条历史短视频，总播放&nbsp;33.1&nbsp;万；两个 Windows 工具开源在 GitHub。共同点是：需求我提，成品我一遍遍改。</p>
         <div class="hero__acts">
           <a class="btn" href="mailto:1656482083@qq.com?subject=%E6%9D%A5%E8%87%AA%E4%BD%9C%E5%93%81%E9%9B%86">发邮件给我</a>
           <a class="link-plain" href="https://www.douyin.com/user/MS4wLjABAAAA_quKhxpuWMYyZz8CGzV7adpU__N0PxaGAa1H-JSBEJwhFH1RxZYOqES1ayDtLnU7" target="_blank" rel="noopener">抖音主页</a>
+          <a class="link-plain" href="https://github.com/YOZODO349" target="_blank" rel="noopener">GitHub</a>
         </div>
       </div>
       <figure class="hero__figure">
@@ -679,6 +737,51 @@
   <section class="sec">
     <div class="wrap">
       <div class="sec__head">
+        <h2 class="sec__title">另一条线：工具</h2>
+        <p class="sec__note">需求我提，代码由 AI 起草，我一版一版改</p>
+      </div>
+
+      <article class="tool">
+        <a class="tool__shot" href="https://github.com/YOZODO349/gui-auto-workbench" target="_blank" rel="noopener">
+          <img src="assets/projects/workbench.png" alt="序列 · 模块工作台界面：左侧模块库，中间运行轨道，右侧模块属性" width="1440" height="920" decoding="async">
+        </a>
+        <div class="tool__body">
+          <div>
+            <p class="tool__meta">Python · 113 个文件 · 离线运行</p>
+            <h3 class="tool__t">序列 · 模块工作台</h3>
+            <a class="tool__link" href="https://github.com/YOZODO349/gui-auto-workbench" target="_blank" rel="noopener">github.com/YOZODO349/gui-auto-workbench</a>
+          </div>
+          <div>
+            <p class="tool__d">把每天重复的界面操作拆成模块，拖到轨道上按顺序跑。模板匹配认画面，状态机控流程，33 道质量门在出错之前把它拦住。</p>
+            <p class="tool__note">它最早是一串写死的单次任务。把它改成可以组装的积木，是我的判断：同一个模块能挪进别的流程复用。这是产品决定，不是技术决定。</p>
+          </div>
+        </div>
+      </article>
+
+      <article class="tool">
+        <a class="tool__shot" href="https://github.com/YOZODO349/agent-inventory" target="_blank" rel="noopener">
+          <img src="assets/projects/inventory.png" alt="Agent 资产总览界面：Agent、技能、MCP 服务与工作任务的统计与名册" width="1400" height="800" decoding="async">
+        </a>
+        <div class="tool__body">
+          <div>
+            <p class="tool__meta">Python · 单文件 exe · CI 自动发版</p>
+            <h3 class="tool__t">Agent 资产总览</h3>
+            <a class="tool__link" href="https://github.com/YOZODO349/agent-inventory" target="_blank" rel="noopener">github.com/YOZODO349/agent-inventory</a>
+          </div>
+          <div>
+            <p class="tool__d">把一台 Windows 上散落的 Agent、技能、MCP 服务扫成一张名册，就地索引它们的记忆和工作记录，再通过 MCP 交给 Agent 自己查。</p>
+            <p class="tool__note">v0.6 我把「每个 Agent 交一份工作记录」整块拆了。要催、会过期、漏写就查不到，这层预付款不划算。改成只读各家原生位置。</p>
+          </div>
+        </div>
+      </article>
+
+      <p class="mini"><strong>炉语</strong>　一个读取本机微信群聊记录、做摘要的 skill，发在炉子上。</p>
+    </div>
+  </section>
+
+  <section class="sec">
+    <div class="wrap">
+      <div class="sec__head">
         <h2 class="sec__title">其余作品</h2>
         <p class="sec__note">按播放排序</p>
       </div>
@@ -706,7 +809,7 @@
           <dl>
             <div><dt>学历</dt><dd>沈阳医学院 临床医学 本科，2026&nbsp;届</dd></div>
             <div><dt>实习</dt><dd>瓦房店市中心医院，一年轮转内科、外科、急诊、妇产、儿&nbsp;科</dd></div>
-            <div><dt>技能</dt><dd>剪映、Claude、Grok Imagine、即梦、可灵、Word / Excel</dd></div>
+            <div><dt>技能</dt><dd>剪映、Claude、Grok Imagine、即梦、可灵、Python（AI 起草，我读代码验收）、Word / Excel</dd></div>
             <div><dt>英语</dt><dd>CET-6，能直接读英文资料和论文，用英文写 prompt</dd></div>
           </dl>
         </div>
