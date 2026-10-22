@@ -1,0 +1,742 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>余镇东 · 内容作品集</title>
+<meta name="description" content="余镇东的内容作品集：六天做完十一条历史短视频，总播放 33.1 万。我定选题，AI 出稿，我审到能发。">
+<meta property="og:title" content="余镇东 · 内容作品集">
+<meta property="og:description" content="六天，十一条，三十三万次播放。我定选题，AI 出稿，我审到能发。">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23BE3A2B'/%3E%3Ctext x='16' y='23' font-family='serif' font-size='20' fill='%23F3F1EC' text-anchor='middle'%3E%E4%BD%99%3C/text%3E%3C/svg%3E">
+<style>
+  :root {
+    --paper: #f3f1ec;
+    --paper-2: #e9e6dd;
+    --ink: #17150f;
+    --ink-soft: #57534a;
+    --ink-faint: #5f5a4e;
+    --rule: #d7d2c5;
+    --vermilion: #be3a2b;
+    --gutter: clamp(20px, 5vw, 48px);
+    --measure: 1180px;
+  }
+
+  * { box-sizing: border-box; }
+
+  html { -webkit-text-size-adjust: 100%; }
+
+  html {
+    font-size: 20px;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB",
+      "Microsoft YaHei", "Source Han Sans SC", "Noto Sans CJK SC", sans-serif;
+    font-size: 1rem;
+    line-height: 1.75;
+    -webkit-font-smoothing: antialiased;
+    font-feature-settings: "tnum" 1;
+  }
+
+  h1, h2, h3, p, ul, ol, figure, dl, dd { margin: 0; }
+  ul, ol { padding: 0; list-style: none; }
+  a { color: inherit; text-decoration-thickness: 1px; text-underline-offset: 3px; }
+
+  .wrap {
+    width: 100%;
+    max-width: var(--measure);
+    margin: 0 auto;
+    padding: 0 var(--gutter);
+  }
+
+  /* ---------- nav ---------- */
+
+  .nav {
+    border-bottom: 1px solid var(--rule);
+  }
+  .nav__in {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+  }
+  .nav__name {
+    font-size: 0.9rem;
+    letter-spacing: 0.14em;
+    font-weight: 600;
+  }
+  .nav__mail {
+    font-size: 0.85rem;
+    color: var(--ink-soft);
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    padding-bottom: 2px;
+    transition: border-color 0.2s ease, color 0.2s ease;
+    white-space: nowrap;
+  }
+  .nav__mail:hover { color: var(--vermilion); border-bottom-color: var(--vermilion); }
+
+  /* ---------- hero ---------- */
+
+  .hero {
+    padding-top: clamp(56px, 9vh, 96px);
+    padding-bottom: clamp(48px, 7vw, 88px);
+  }
+  .hero__grid {
+    display: grid;
+    grid-template-columns: 1.22fr 0.78fr;
+    gap: clamp(32px, 5vw, 72px);
+    align-items: end;
+  }
+  .eyebrow {
+    font-size: 0.78rem;
+    letter-spacing: 0.16em;
+    color: var(--ink-faint);
+    margin-bottom: 22px;
+  }
+  h1 {
+    font-size: clamp(1.75rem, 4vw, 3.3rem);
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+    font-weight: 700;
+    text-wrap: balance;
+  }
+  h1 em {
+    font-style: normal;
+    color: var(--vermilion);
+  }
+  .hero__sub {
+    margin-top: 26px;
+    max-width: 34ch;
+    color: var(--ink-soft);
+    font-size: clamp(1rem, 1.2vw, 1.06rem);
+  }
+  .hero__acts {
+    margin-top: 34px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 14px 22px;
+  }
+  .btn {
+    display: inline-block;
+    background: var(--ink);
+    color: var(--paper);
+    text-decoration: none;
+    font-size: 0.95rem;
+    padding: 13px 26px;
+    border-radius: 0;
+    transition: background-color 0.2s ease, transform 0.12s ease;
+    white-space: nowrap;
+  }
+  .btn:hover { background: var(--vermilion); }
+  .btn:active { transform: translateY(1px); }
+  .link-plain {
+    font-size: 0.95rem;
+    color: var(--ink);
+    text-decoration: none;
+    border-bottom: 1px solid var(--ink-faint);
+    padding-bottom: 1px;
+    transition: color 0.2s ease, border-color 0.2s ease;
+  }
+  .link-plain:hover { color: var(--vermilion); border-bottom-color: var(--vermilion); }
+
+  .hero__figure { text-align: left; }
+  .hero__num {
+    font-size: clamp(3.2rem, 8vw, 6rem);
+    line-height: 0.92;
+    letter-spacing: -0.04em;
+    font-weight: 700;
+    color: var(--ink);
+  }
+  .hero__num span { font-size: 0.42em; letter-spacing: 0; margin-left: 0.08em; }
+  .hero__cap {
+    margin-top: 18px;
+    padding-top: 14px;
+    border-top: 1px solid var(--rule);
+    font-size: 0.82rem;
+    line-height: 1.7;
+    color: var(--ink-soft);
+    max-width: 30ch;
+  }
+
+  /* ---------- section frame ---------- */
+
+  .sec { padding: clamp(48px, 6vw, 82px) 0; }
+  .sec--tight { padding: clamp(36px, 4vw, 56px) 0; }
+  .sec__head {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 20px;
+    padding-bottom: 18px;
+    border-bottom: 1px solid var(--rule);
+    margin-bottom: clamp(28px, 4vw, 48px);
+  }
+  .sec__title {
+    font-size: 1.14rem;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+  }
+  .sec__note {
+    font-size: 0.8rem;
+    color: var(--ink-faint);
+    text-align: right;
+  }
+
+  /* ---------- stats ---------- */
+
+  .stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .stats > div {
+    padding: 4px 24px 4px 0;
+    border-left: 1px solid var(--rule);
+    padding-left: 24px;
+  }
+  .stats > div:first-child { border-left: 0; padding-left: 0; }
+  .stat__n {
+    font-size: clamp(1.6rem, 3vw, 2.3rem);
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+    font-weight: 700;
+  }
+  .stat__n small { font-size: 0.5em; font-weight: 600; margin-left: 2px; }
+  .stat__l {
+    margin-top: 8px;
+    font-size: 0.8rem;
+    color: var(--ink-soft);
+    line-height: 1.5;
+  }
+
+  /* ---------- featured ---------- */
+
+  .feat {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: clamp(18px, 2.6vw, 34px);
+  }
+  .feat a { text-decoration: none; display: block; }
+  .shot {
+    position: relative;
+    overflow: hidden;
+    background: var(--paper-2);
+    aspect-ratio: 3 / 4;
+    outline: 1px solid rgba(23, 21, 15, 0.07);
+    outline-offset: -1px;
+  }
+  .shot img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.5s cubic-bezier(0.2, 0.7, 0.3, 1);
+  }
+  .feat a:hover .shot img { transform: scale(1.03); }
+  .feat__meta {
+    margin-top: 18px;
+    padding-top: 14px;
+    border-top: 1px solid var(--rule);
+  }
+  .feat__play {
+    font-size: 1.28rem;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+  }
+  .feat__play small { font-size: 0.62em; font-weight: 600; margin-left: 2px; color: var(--ink-soft); }
+  .feat__t {
+    margin-top: 6px;
+    font-size: 0.9rem;
+    line-height: 1.55;
+    color: var(--ink);
+    max-width: 22ch;
+  }
+  .feat__d {
+    margin-top: 8px;
+    font-size: 0.75rem;
+    color: var(--ink-faint);
+  }
+
+  /* ---------- flow ---------- */
+
+  .flow {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 0;
+    border-top: 1px solid var(--rule);
+  }
+  .flow > li {
+    position: relative;
+    border-right: 1px solid var(--rule);
+    padding: 30px 22px 6px 0;
+  }
+  .flow > li::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1px;
+    height: 14px;
+    background: var(--vermilion);
+  }
+  .flow > li:last-child { border-right: 0; }
+  .flow > li + li { padding-left: 22px; }
+  .flow__i {
+    font-size: 0.8rem;
+    color: var(--vermilion);
+    letter-spacing: 0.12em;
+    font-weight: 700;
+  }
+  .flow__t {
+    margin-top: 10px;
+    font-size: 0.98rem;
+    font-weight: 700;
+  }
+  .flow__d {
+    margin-top: 8px;
+    font-size: 0.82rem;
+    line-height: 1.7;
+    color: var(--ink-soft);
+  }
+
+  /* ---------- judgement ---------- */
+
+  .judge {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: clamp(24px, 4vw, 56px);
+  }
+  .judge h3 {
+    font-size: 0.98rem;
+    font-weight: 700;
+    padding-bottom: 12px;
+    border-bottom: 1px solid var(--ink);
+    display: inline-block;
+  }
+  .judge p {
+    margin-top: 16px;
+    font-size: 0.92rem;
+    line-height: 1.85;
+    color: var(--ink-soft);
+  }
+
+  /* ---------- list ---------- */
+
+  .list { border-top: 1px solid var(--rule); }
+  .list li {
+    display: grid;
+    grid-template-columns: 34px 52px 1fr auto;
+    gap: 16px;
+    align-items: center;
+    padding: 12px 0;
+    border-bottom: 1px solid var(--rule);
+    font-size: 0.9rem;
+  }
+  .list .n { color: var(--ink-faint); font-size: 0.78rem; }
+  .list .p { color: var(--ink-soft); font-size: 0.84rem; white-space: nowrap; }
+  .list .thumb {
+    width: 52px;
+    aspect-ratio: 3 / 4;
+    display: block;
+    overflow: hidden;
+    background: var(--paper-2);
+  }
+  .list .thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.4s cubic-bezier(0.2, 0.7, 0.3, 1);
+  }
+  .list li:hover .thumb img { transform: scale(1.08); }
+  .list a { text-decoration: none; }
+  .list a:hover { color: var(--vermilion); }
+
+  /* ---------- profile ---------- */
+
+  .prof {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr;
+    gap: clamp(32px, 6vw, 88px);
+  }
+  .prof dl > div {
+    display: grid;
+    grid-template-columns: 92px 1fr;
+    gap: 16px;
+    padding: 14px 0;
+    border-bottom: 1px solid var(--rule);
+    font-size: 0.9rem;
+  }
+  .prof dt { color: var(--ink-faint); font-size: 0.8rem; padding-top: 2px; }
+  .prof dd { color: var(--ink); }
+  .contact__l { font-size: 0.8rem; color: var(--ink-faint); margin-bottom: 10px; }
+  .contact__big {
+    font-size: clamp(1.05rem, 1.6vw, 1.25rem);
+    font-weight: 600;
+    text-decoration: none;
+    border-bottom: 1px solid var(--ink);
+    padding-bottom: 2px;
+    display: inline-block;
+    transition: color 0.2s ease, border-color 0.2s ease;
+  }
+  .contact__big:hover { color: var(--vermilion); border-color: var(--vermilion); }
+  .contact__row { margin-bottom: 26px; }
+
+  .foot {
+    border-top: 1px solid var(--rule);
+    padding: 26px 0 44px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 8px 16px;
+    font-size: 0.78rem;
+    color: var(--ink-faint);
+  }
+
+  /* ---------- entrance ---------- */
+
+  @keyframes rise {
+    from { transform: translateY(12px); }
+    to   { transform: none; }
+  }
+  .hero__grid > * {
+    animation: rise 0.6s cubic-bezier(0.2, 0.7, 0.3, 1) both;
+  }
+  .hero__grid > *:nth-child(2) { animation-delay: 0.08s; }
+
+  @media (prefers-reduced-motion: reduce) {
+    .hero__grid > * { animation: none; }
+  }
+
+  @media print {
+    .nav { border-bottom-color: #ccc; }
+    .sec, .flow, .judge, .feat, .list li, .prof dl > div { break-inside: avoid; }
+    .hero__grid > * { animation: none; }
+    .btn { border: 1px solid #000; }
+  }
+
+  /* ---------- polish ---------- */
+
+  ::selection { background: var(--vermilion); color: var(--paper); }
+
+  :focus-visible { outline: 2px solid var(--vermilion); outline-offset: 3px; }
+
+  .nav__left { display: flex; align-items: center; gap: 12px; }
+
+  .seal {
+    width: 30px;
+    height: 30px;
+    display: inline-grid;
+    place-items: center;
+    background: var(--vermilion);
+    color: var(--paper);
+    font-size: 15px;
+    line-height: 1;
+    font-weight: 700;
+    flex: none;
+  }
+
+  /* film strip */
+
+  .strip {
+    border-top: 1px solid var(--rule);
+    border-bottom: 1px solid var(--rule);
+    padding: 24px 0;
+    display: flex;
+    justify-content: safe center;
+    overflow-x: auto;
+    scrollbar-width: none;
+    -webkit-overflow-scrolling: touch;
+  }
+  .strip::-webkit-scrollbar { display: none; }
+  .strip__in {
+    display: flex;
+    gap: 8px;
+    padding: 0 var(--gutter);
+    width: max-content;
+    margin: 0;
+  }
+  .strip a {
+    display: block;
+    width: clamp(64px, 7.4vw, 108px);
+    aspect-ratio: 3 / 4;
+    overflow: hidden;
+    background: var(--paper-2);
+  }
+  .strip img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.45s cubic-bezier(0.2, 0.7, 0.3, 1);
+  }
+  .strip a:hover img { transform: scale(1.07); }
+
+  /* ---------- responsive ---------- */
+
+  @media (max-width: 920px) {
+    .hero__grid { grid-template-columns: 1fr; align-items: start; gap: 40px; }
+    .hero__cap { max-width: none; }
+    .feat { grid-template-columns: 1fr; gap: 34px; }
+    .feat__t { max-width: none; }
+    .strip a { width: 88px; }
+    .flow { grid-template-columns: repeat(2, 1fr); }
+    .flow > li { border-right: 0; padding: 26px 0 6px; border-bottom: 1px solid var(--rule); }
+    .flow > li + li { padding-left: 0; }
+    .flow > li:nth-child(odd) { padding-right: 20px; }
+    .flow > li:nth-child(even) { padding-left: 20px; border-left: 1px solid var(--rule); }
+    .judge { grid-template-columns: 1fr; gap: 34px; }
+    .prof { grid-template-columns: 1fr; }
+  }
+
+  @media (max-width: 640px) {
+    .stats { grid-template-columns: repeat(2, 1fr); row-gap: 26px; }
+    .stats > div:nth-child(3) { border-left: 0; padding-left: 0; }
+    .stats > div { padding-right: 12px; }
+    .flow { grid-template-columns: 1fr; }
+    .flow > li { border-left: 0 !important; padding-left: 0 !important; padding-right: 0 !important; }
+    .list li { grid-template-columns: 24px 40px 1fr auto; gap: 12px; }
+    .list .thumb { width: 40px; }
+    .list .p { grid-column: auto; font-size: 0.78rem; }
+    .sec__head { flex-direction: column; align-items: flex-start; gap: 6px; }
+    .sec__note { text-align: left; }
+    .prof dl > div { display: block; padding: 15px 0; }
+    .prof dt { margin-bottom: 5px; padding-top: 0; }
+  }
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap nav__in">
+    <span class="nav__left">
+      <span class="seal">余</span>
+      <span class="nav__name">余镇东</span>
+    </span>
+    <a class="nav__mail" href="mailto:1656482083@qq.com">1656482083@qq.com</a>
+  </div>
+</header>
+
+<main>
+
+  <section class="hero">
+    <div class="wrap hero__grid">
+      <div>
+        <p class="eyebrow">内容运营 · AI 工作流</p>
+        <h1>我定选题，AI 出稿，<br>我<em>审到能发</em>。</h1>
+        <p class="hero__sub">六天做完十一条历史短视频，总播放&nbsp;33.1&nbsp;万。临床医学出身，习惯逐字核对。</p>
+        <div class="hero__acts">
+          <a class="btn" href="mailto:1656482083@qq.com?subject=%E6%9D%A5%E8%87%AA%E4%BD%9C%E5%93%81%E9%9B%86">发邮件给我</a>
+          <a class="link-plain" href="https://www.douyin.com/user/MS4wLjABAAAA_quKhxpuWMYyZz8CGzV7adpU__N0PxaGAa1H-JSBEJwhFH1RxZYOqES1ayDtLnU7" target="_blank" rel="noopener">抖音主页</a>
+        </div>
+      </div>
+      <figure class="hero__figure">
+        <p class="hero__num">33.1<span>万</span></p>
+        <figcaption class="hero__cap">总播放。十一条作品集中在 2026&nbsp;年 10&nbsp;月 16&nbsp;日至 21&nbsp;日，同一个人、同一套流程。</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <div class="strip" aria-label="十一条作品的封面">
+    <div class="strip__in">
+      <a href="https://www.douyin.com/user/MS4wLjABAAAA_quKhxpuWMYyZz8CGzV7adpU__N0PxaGAa1H-JSBEJwhFH1RxZYOqES1ayDtLnU7" target="_blank" rel="noopener"><img src="assets/covers/c-01.jpg" alt="一千年北伐全败了，为什么只有他做成了？" width="323" height="430" decoding="async"></a>
+      <a href="https://www.douyin.com/user/MS4wLjABAAAA_quKhxpuWMYyZz8CGzV7adpU__N0PxaGAa1H-JSBEJwhFH1RxZYOqES1ayDtLnU7" target="_blank" rel="noopener"><img src="assets/covers/c-02.jpg" alt="皇帝管不住地方？三千年，九个王朝都在解" width="323" height="430" decoding="async"></a>
+      <a href="https://www.douyin.com/user/MS4wLjABAAAA_quKhxpuWMYyZz8CGzV7adpU__N0PxaGAa1H-JSBEJwhFH1RxZYOqES1ayDtLnU7" target="_blank" rel="noopener"><img src="assets/covers/c-03.jpg" alt="一把椅子，皇帝拆了两千年？" width="323" height="430" decoding="async"></a>
+      <a href="https://www.douyin.com/user/MS4wLjABAAAA_quKhxpuWMYyZz8CGzV7adpU__N0PxaGAa1H-JSBEJwhFH1RxZYOqES1ayDtLnU7" target="_blank" rel="noopener"><img src="assets/covers/c-04.jpg" alt="骑奴与少年，打到了匈奴圣山" width="323" height="430" decoding="async"></a>
+      <a href="https://www.douyin.com/user/MS4wLjABAAAA_quKhxpuWMYyZz8CGzV7adpU__N0PxaGAa1H-JSBEJwhFH1RxZYOqES1ayDtLnU7" target="_blank" rel="noopener"><img src="assets/covers/c-05.jpg" alt="别担心，一切正常…吗？" width="323" height="430" decoding="async"></a>
+      <a href="https://www.douyin.com/user/MS4wLjABAAAA_quKhxpuWMYyZz8CGzV7adpU__N0PxaGAa1H-JSBEJwhFH1RxZYOqES1ayDtLnU7" target="_blank" rel="noopener"><img src="assets/covers/c-06.jpg" alt="白衣渡江：这一刀，是精明还是愚蠢？" width="323" height="430" decoding="async"></a>
+      <a href="https://www.douyin.com/user/MS4wLjABAAAA_quKhxpuWMYyZz8CGzV7adpU__N0PxaGAa1H-JSBEJwhFH1RxZYOqES1ayDtLnU7" target="_blank" rel="noopener"><img src="assets/covers/c-07.jpg" alt="致命的金童思维：必须完美才配被爱？" width="323" height="430" decoding="async"></a>
+      <a href="https://www.douyin.com/user/MS4wLjABAAAA_quKhxpuWMYyZz8CGzV7adpU__N0PxaGAa1H-JSBEJwhFH1RxZYOqES1ayDtLnU7" target="_blank" rel="noopener"><img src="assets/covers/c-08.jpg" alt="一根幡竿赢下画院魁首：留白与克制" width="323" height="430" decoding="async"></a>
+      <a href="https://www.douyin.com/user/MS4wLjABAAAA_quKhxpuWMYyZz8CGzV7adpU__N0PxaGAa1H-JSBEJwhFH1RxZYOqES1ayDtLnU7" target="_blank" rel="noopener"><img src="assets/covers/c-09.jpg" alt="剑阁守住了，蜀汉为什么还是输了？" width="323" height="430" decoding="async"></a>
+      <a href="https://www.douyin.com/user/MS4wLjABAAAA_quKhxpuWMYyZz8CGzV7adpU__N0PxaGAa1H-JSBEJwhFH1RxZYOqES1ayDtLnU7" target="_blank" rel="noopener"><img src="assets/covers/c-10.jpg" alt="二战飞机上的弹孔，骗过了所有人" width="323" height="430" decoding="async"></a>
+      <a href="https://www.douyin.com/user/MS4wLjABAAAA_quKhxpuWMYyZz8CGzV7adpU__N0PxaGAa1H-JSBEJwhFH1RxZYOqES1ayDtLnU7" target="_blank" rel="noopener"><img src="assets/covers/c-11.jpg" alt="泰坦尼克号本可不沉？区别只在一个思维" width="323" height="430" decoding="async"></a>
+    </div>
+  </div>
+
+  <section class="sec sec--tight">
+    <div class="wrap">
+      <div class="stats">
+        <div>
+          <p class="stat__n">11<small>条</small></p>
+          <p class="stat__l">六天内发布</p>
+        </div>
+        <div>
+          <p class="stat__n">18.3<small>万</small></p>
+          <p class="stat__l">单条最高播放</p>
+        </div>
+        <div>
+          <p class="stat__n">14,093</p>
+          <p class="stat__l">累计点赞</p>
+        </div>
+        <div>
+          <p class="stat__n">4.25<small>%</small></p>
+          <p class="stat__l">赞播比，另有 2,720 次收藏</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec">
+    <div class="wrap">
+      <div class="sec__head">
+        <h2 class="sec__title">三支代表作</h2>
+        <p class="sec__note">点封面可看原片</p>
+      </div>
+      <div class="feat">
+        <a href="https://www.douyin.com/video/7697784500545162496" target="_blank" rel="noopener">
+          <div class="shot"><img src="assets/covers/c-01.jpg" alt="朱元璋北伐，地图上的进军路线" width="323" height="430"></div>
+          <div class="feat__meta">
+            <p class="feat__play">18.3<small>万</small></p>
+            <p class="feat__t">一千年北伐全败了，为什么只有他做成了？</p>
+            <p class="feat__d">2:22 · 10 月 18 日 · 收藏 2,046</p>
+          </div>
+        </a>
+        <a href="https://www.douyin.com/video/7697960981611285801" target="_blank" rel="noopener">
+          <div class="shot"><img src="assets/covers/c-02.jpg" alt="皇帝与地方权力的关系插图" width="323" height="430"></div>
+          <div class="feat__meta">
+            <p class="feat__play">10.3<small>万</small></p>
+            <p class="feat__t">皇帝管不住地方？</p>
+            <p class="feat__d">3:13 · 10 月 18 日 · 收藏 462</p>
+          </div>
+        </a>
+        <a href="https://www.douyin.com/video/7698797224280591666" target="_blank" rel="noopener">
+          <div class="shot"><img src="assets/covers/c-03.jpg" alt="古代官制与丞相之位" width="323" height="430" decoding="async"></div>
+          <div class="feat__meta">
+            <p class="feat__play">1.5<small>万</small></p>
+            <p class="feat__t">一把"椅子"，皇帝拆了两千年？</p>
+            <p class="feat__d">2:20 · 10 月 21 日 · 收藏 57</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec">
+    <div class="wrap">
+      <div class="sec__head">
+        <h2 class="sec__title">一条片子怎么出来</h2>
+        <p class="sec__note">AI 负责生成，我负责判断</p>
+      </div>
+      <ol class="flow">
+        <li>
+          <p class="flow__i">01</p>
+          <p class="flow__t">选题</p>
+          <p class="flow__d">我从历史里挑一个反常识的点，先确认它能落到具体年份、具体人物上。</p>
+        </li>
+        <li>
+          <p class="flow__i">02</p>
+          <p class="flow__t">脚本</p>
+          <p class="flow__d">交给 Claude 出初稿，我再改成自己能讲出口的版本。</p>
+        </li>
+        <li>
+          <p class="flow__i">03</p>
+          <p class="flow__t">画面</p>
+          <p class="flow__d">Grok Imagine、即梦、可灵生成分镜画面，剪映做剪辑和字幕。</p>
+        </li>
+        <li>
+          <p class="flow__i">04</p>
+          <p class="flow__t">审校</p>
+          <p class="flow__d">逐镜看手指、肢体、服饰年代。错在这一步拦下，不留到发布。</p>
+        </li>
+        <li>
+          <p class="flow__i">05</p>
+          <p class="flow__t">发布</p>
+          <p class="flow__d">标题、封面、话题标签，发出后看播放和收藏。</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="sec">
+    <div class="wrap">
+      <div class="sec__head">
+        <h2 class="sec__title">我能判断什么</h2>
+      </div>
+      <div class="judge">
+        <div>
+          <h3>审校有标准</h3>
+          <p>临床医学五年训练，解剖和病理的差错我一眼能看出来。AI 生成的画面里多一根指头、错一条血管，我退回重做，而不是等观众指出来。</p>
+        </div>
+        <div>
+          <h3>选题是我在做</h3>
+          <p>AI 能给十个方向，发哪一个由我定。判断标准很土：这个点够不够反常识，能不能三句话说清，有没有画面。</p>
+        </div>
+        <div>
+          <h3>数据要回看</h3>
+          <p>十一条里最高 18.3 万，最低 776。同一个人、同一套流程，差两百倍，说明选题和标题比制作更决定结果。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec">
+    <div class="wrap">
+      <div class="sec__head">
+        <h2 class="sec__title">其余作品</h2>
+        <p class="sec__note">按播放排序</p>
+      </div>
+      <ul class="list">
+        <li><span class="n">04</span><a class="thumb" href="https://www.douyin.com/video/7698504170604743990" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true"><img src="assets/covers/c-04.jpg" alt="" width="46" height="61" decoding="async"></a><a href="https://www.douyin.com/video/7698504170604743990" target="_blank" rel="noopener">骑奴与少年，打到了匈奴圣山</a><span class="p">1.1 万</span></li>
+        <li><span class="n">05</span><a class="thumb" href="https://www.douyin.com/video/7697566882852769034" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true"><img src="assets/covers/c-05.jpg" alt="" width="46" height="61" decoding="async"></a><a href="https://www.douyin.com/video/7697566882852769034" target="_blank" rel="noopener">别担心，一切正常…吗？</a><span class="p">5,014</span></li>
+        <li><span class="n">06</span><a class="thumb" href="https://www.douyin.com/video/7698175186734042387" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true"><img src="assets/covers/c-06.jpg" alt="" width="46" height="61" decoding="async"></a><a href="https://www.douyin.com/video/7698175186734042387" target="_blank" rel="noopener">白衣渡江：这一刀，是精明还是愚蠢？</a><span class="p">3,987</span></li>
+        <li><span class="n">07</span><a class="thumb" href="https://www.douyin.com/video/7697639009735953702" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true"><img src="assets/covers/c-07.jpg" alt="" width="46" height="61" decoding="async"></a><a href="https://www.douyin.com/video/7697639009735953702" target="_blank" rel="noopener">"致命"的金童思维：必须完美才配被爱？</a><span class="p">3,754</span></li>
+        <li><span class="n">08</span><a class="thumb" href="https://www.douyin.com/video/7697529202358226186" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true"><img src="assets/covers/c-08.jpg" alt="" width="46" height="61" decoding="async"></a><a href="https://www.douyin.com/video/7697529202358226186" target="_blank" rel="noopener">一根幡竿赢下画院魁首：留白与克制</a><span class="p">2,309</span></li>
+        <li><span class="n">09</span><a class="thumb" href="https://www.douyin.com/video/7697003437073911066" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true"><img src="assets/covers/c-09.jpg" alt="" width="46" height="61" decoding="async"></a><a href="https://www.douyin.com/video/7697003437073911066" target="_blank" rel="noopener">剑阁守住了，蜀汉为什么还是输了？</a><span class="p">2,045</span></li>
+        <li><span class="n">10</span><a class="thumb" href="https://www.douyin.com/video/7697475880427293979" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true"><img src="assets/covers/c-10.jpg" alt="" width="46" height="61" decoding="async"></a><a href="https://www.douyin.com/video/7697475880427293979" target="_blank" rel="noopener">二战飞机上的弹孔，骗过了所有人</a><span class="p">1,103</span></li>
+        <li><span class="n">11</span><a class="thumb" href="https://www.douyin.com/video/7697221684419464483" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true"><img src="assets/covers/c-11.jpg" alt="" width="46" height="61" decoding="async"></a><a href="https://www.douyin.com/video/7697221684419464483" target="_blank" rel="noopener">泰坦尼克号本可不沉？区别只在一个思维</a><span class="p">776</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="sec">
+    <div class="wrap">
+      <div class="sec__head">
+        <h2 class="sec__title">背景与联系</h2>
+        <p class="sec__note">人在广州，可到深圳全职</p>
+      </div>
+      <div class="prof">
+        <div>
+          <dl>
+            <div><dt>学历</dt><dd>沈阳医学院 临床医学 本科，2026&nbsp;届</dd></div>
+            <div><dt>实习</dt><dd>瓦房店市中心医院，一年轮转内科、外科、急诊、妇产、儿&nbsp;科</dd></div>
+            <div><dt>技能</dt><dd>剪映、Claude、Grok Imagine、即梦、可灵、Word / Excel</dd></div>
+            <div><dt>英语</dt><dd>CET-6，能直接读英文资料和论文，用英文写 prompt</dd></div>
+          </dl>
+        </div>
+        <div>
+          <p class="contact__l">想聊，直接找我</p>
+          <div class="contact__row">
+            <a class="contact__big" href="mailto:1656482083@qq.com">1656482083@qq.com</a>
+          </div>
+          <div class="contact__row">
+            <a class="contact__big" href="tel:+8618928743893">18928743893</a>
+          </div>
+          <p style="font-size:0.82rem;color:var(--ink-faint);line-height:1.8;max-width:30ch;">
+            抖音账号「半筒水的秘密」，十一条作品都能点开看。
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="wrap foot">
+  <span>余镇东 · 2026</span>
+  <span class="foot__note">数据截至 2026.10.22</span>
+</footer>
+
+<script>
+  document.documentElement.classList.add('js');
+</script>
+
+</body>
+</html>
+
